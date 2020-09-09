@@ -17,6 +17,9 @@
 @property (nonatomic, copy) NSString *instanceID;
 @end
 @implementation IronSourceRewardedVideoCustomEvent
+@dynamic delegate;
+@dynamic localExtras;
+@dynamic hasAdAvailable;
 
 - (NSString *) getAdNetworkId {
     return _instanceID;
@@ -104,7 +107,7 @@
 }
 
 #pragma mark IronSource RV Methods
--(void) loadRewardedVideo:(NSString *)instanceId WithAdMarkup: (NSString *) adMarkup{
+-(void) loadRewardedVideo:(NSString *)instanceId WithAdMarkup: (NSString *) adMarkup {
     MPLogInfo(@"IronSource loadRewardedVideo for instance %@ (current instance %@)",
               instanceId, [self getAdNetworkId]);
     MPLogAdEvent([MPLogEvent adLoadAttemptForAdapter:NSStringFromClass(self.class) dspCreativeId:nil dspName:nil],instanceId);

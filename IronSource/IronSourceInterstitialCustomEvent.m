@@ -16,12 +16,19 @@
 @end
 
 @implementation IronSourceInterstitialCustomEvent
+@dynamic delegate;
+@dynamic localExtras;
+@dynamic hasAdAvailable;
 
 - (NSString *) getAdNetworkId {
     return _instanceId;
 }
 
 #pragma mark - MPFullscreenAdAdapter Override
+
+- (BOOL)hasAdAvailable {
+    return [IronSource hasISDemandOnlyInterstitial:[self getAdNetworkId]];
+}
 
 - (BOOL)isRewardExpected {
     return NO;

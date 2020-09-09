@@ -1,4 +1,17 @@
 ## Changelog
+   * 6.13.5.0
+     * Remove MREC support from AppLovin banner adapter.
+     * This version of the adapters has been certified with AppLovin SDK 6.13.5 and MoPub SDK 5.13.1.
+
+   * 6.13.4.0
+     * This version of the adapters has been certified with AppLovin SDK 6.13.4 and MoPub SDK 5.13.1.
+
+   * 6.13.2.0
+     * This version of the adapters has been certified with AppLovin SDK 6.13.2 and MoPub SDK 5.13.1.
+
+   * 6.13.1.1
+     * Fix adapter compiler warnings.
+
    * 6.13.1.0
      * This version of the adapters has been certified with AppLovin SDK 6.13.1 and MoPub SDK 5.13.1.
 

@@ -76,13 +76,12 @@ NSMapTable<NSString *, id<IronSourceInterstitialDelegate>>
         [self addRewardedDelegate:adapterDelegate forInstanceID:instanceID];
         MPLogDebug(@"IronSourceManager - load Rewarded Video called for instance Id %@", instanceID);
         
-    if(adMarkup != nil) {
+    if (adMarkup != nil) {
         [IronSource loadISDemandOnlyRewardedVideoWithAdm:instanceID adm:adMarkup];
-    }
-    else {
+    } else {
         [IronSource loadISDemandOnlyRewardedVideo:instanceID];
     }
-    }
+}
 
 - (void)presentRewardedAdFromViewController:(nonnull UIViewController *)viewController
                                  instanceID:(NSString *)instanceID {
@@ -102,7 +101,7 @@ NSMapTable<NSString *, id<IronSourceInterstitialDelegate>>
     
     [self addInterstitialDelegate:adapterDelegate forInstanceID:instanceID];
     MPLogDebug(@"IronSourceManager - load Interstitial called for instance Id %@", instanceID);
-    if(adMarkup != nil){
+    if (adMarkup != nil) {
         [IronSource loadISDemandOnlyInterstitialWithAdm:instanceID adm:adMarkup];
     } else {
         [IronSource loadISDemandOnlyInterstitial:instanceID];
