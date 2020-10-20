@@ -1,4 +1,16 @@
 ## Changelog	
+   * 3.2.6.2.2
+     * Fix ad request failures if Pangle is not initialized with an app ID.
+
+   * 3.2.6.2.1
+     * This version of the adapters has been certified with Pangle 3.2.6.2 and MoPub SDK 5.14.1.
+
+   * 3.2.6.2.0
+     * This version of the adapters has been certified with Pangle 3.2.6.2 and MoPub SDK 5.13.1.
+
+   * 3.2.5.2.0
+     * This version of the adapters has been certified with Pangle 3.2.5.2 and MoPub SDK 5.13.1.
+
    * 3.2.5.1.0
      * Support Advanced Bidding.
      * This version of the adapters has been certified with Pangle 3.2.5.1 and MoPub SDK 5.13.1.
